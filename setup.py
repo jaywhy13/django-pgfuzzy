@@ -32,5 +32,5 @@ setup(
         'Topic :: Internet :: WWW/HTTP',
         'Topic :: Internet :: WWW/HTTP :: Dynamic Content',
     ],
-    install_requires=[ req for req in open("%s/requirements.txt" % os.path.dirname(__file__),"r").read().splitlines() if req.strip() and not req.startswith("#")]
+    install_requires=[ req for req in open("%s/requirements.txt" % os.path.abspath(os.path.dirname(__file__)),"r").read().splitlines() if req.strip() and not req.startswith("#")]
 )
