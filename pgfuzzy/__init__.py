@@ -6,6 +6,9 @@ def soundex(text):
     row = cursor.fetchone()
     return row[0]
 
+def sounds_like(txt1, txt2):
+    return dmetaphone(txt1) == dmetaphone(txt2)
+
 def difference(text, text1):
     cursor = connection.cursor()
     cursor.execute("SELECT difference(%s, %s)", [text, text1])
