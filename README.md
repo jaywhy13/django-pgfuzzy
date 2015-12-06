@@ -1,4 +1,4 @@
-# django-pgsoundex
+# django-pgfuzzy
 
 This library allows usage of the PostgreSQL fuzzystrmatch functions. This 
 package depends on PostgreSQL, therefore you'll need to have a PostgreSQL 
